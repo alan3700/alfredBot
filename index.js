@@ -13,7 +13,7 @@ const client = new Client({
 	],
 });
 
-const token = ""
+const token = "MTExMTI5NDkxMjM1NzQ3ODU1Mg.GyV5Dr.daFQ6Vwu8dTahfPxtyJ6iaMXictV1hlPiAYdtE"
 
 client.on('ready', () => {
   console.log('Félicitations, Alfred démarre !');
