@@ -1,4 +1,7 @@
+
+import TOKEN from "./.env"
 const { Client, GatewayIntentBits } = require('discord.js');
+const dotenv = require('dotenv');
 
 const client = new Client({
 	intents: [
@@ -9,7 +12,7 @@ const client = new Client({
 	],
 });
 
-const token = 'MTExMTI5NDkxMjM1NzQ3ODU1Mg.GiGyTI.q-TF4HOtzwJO7k-ZkNJgo7Cntd9J8ASOZ6sk6w';
+const token = process.env.TOKEN;
 
 client.on('ready', () => {
   console.log('Félicitations, Alfred démarre !');
